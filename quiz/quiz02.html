@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border: 1px solid white;
+      }
+      td {
+        text-align: center;
+        background-color: #fed6d5;
+        font-size: 30px;
+        color: #ff7f24;
+        border: 1px solid white;
+        width: 50px;
+        height: 50px;
+      }
+      .up {
+        background-color: #ff7f24;
+        color: white;
+      }
+      .clear {
+        background-color: #51e4ec;
+        color: white;
+      }
+      .equal {
+        background-color: #ea2131;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="up" colspan="4">25</td>
+      </tr>
+      <tr>
+        <td class="clear" colspan="2">clear</td>
+        <td>-</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>/</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>%</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td class="equal" rowspan="2">=</td>
+        <!-- 위에서 아래로 병합하기 때문에 5번째 col에서 적용 -->
+      </tr>
+      <tr>
+        <td colspan="2">0</td>
+        <td>.</td>
+      </tr>
+    </table>
+  </body>
+</html>
